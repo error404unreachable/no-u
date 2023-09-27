@@ -10,6 +10,6 @@ if (isset($_POST["logout"])) {
  
 // (C) REDIRECT TO LOGIN PAGE IF NOT LOGGED IN
 if (!isset($_SESSION["user"])) {
-  header("Location: 1-login.php");
+  header("Location: login.php");
   exit();
 }
