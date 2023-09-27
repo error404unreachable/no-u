@@ -6,7 +6,7 @@ session_start();
 if (isset($_POST["user"]) && !isset($_SESSION["user"])) {
   // (B1) USERS & PASSWORDS - SET YOUR OWN !
    $users = [
-    "joe" => "123456",
+    "Max" => "404",
     "jon" => "654321",
     "joy" => "987654"
   ];
@@ -22,6 +22,6 @@ if (isset($_POST["user"]) && !isset($_SESSION["user"])) {
  
 // (C) REDIRECT TO HOME PAGE IF SIGNED IN - SET YOUR OWN !
 if (isset($_SESSION["user"])) {
-  header("Location: 4-dummy.php");
+  header("Location: logout.php");
   exit();
 }
