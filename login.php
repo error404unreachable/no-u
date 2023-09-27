@@ -1,13 +1,13 @@
 <?php
 // (A) LOGIN CHECKS
-require "2-check.php";
+require "check.php";
 
 // (B) LOGIN PAGE HTML ?>
 <!DOCTYPE html>
 <html>
   <head>
     <title>Login Page Demo</title>
-    <link href="1-login.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
   </head>
   <body>
     <?php if (isset($failed)) { ?>
