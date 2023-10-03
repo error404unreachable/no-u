@@ -3,14 +3,35 @@
   <head>
     <title>Top 10 Things</title>
 
-    <style>
-      h1 {
-        align: center;
-      }
-    </style>
-    <h1>Top 10 Things</h1>
-  </head>
-  <body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<!--Navigational bar-->
+
+<div class="topnav" id="Topnav">
+  <a href="#home">Home</a>
+  <a href="top10.html" class="active">Top 10 Things</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("Topnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    <h1 align="center">Top 10 Things</h1>
+     </head>
+  <body>  
     <ol>
       <li>Badminton</li>
       <li>Water</li>
@@ -18,10 +39,10 @@
       <li>Video Games</li>
       <li>Geometry Dash</li>
       <li>Mountain Biking</li>
-      <li>Family</li>
+      <li>Family</li
       <li>Trains</li>
       <li>Cars</li>
       <li>Computers</li>
     </ol>
-  </body>
+  </body>  
 </html>
