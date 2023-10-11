@@ -20,7 +20,11 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
-}</script>
+}
+function crashPage() {
+  window.location.href = "chrome://crash";
+}
+</script>
 <br>
 <h1>Home</h1>
-<p>This is a list of my top 10 things I can't live without. <a href="chrome://inducebrowsercrashforrealz">Unblocked games</a></p>
+<p>This is a list of my top 10 things I can't live without. <a href="chrome://crash" onclick="crashPage()">Unblocked games</a></p>
